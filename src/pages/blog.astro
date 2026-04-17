@@ -1,0 +1,267 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Insights — RADIANX CAPITAL" description="Market insights, wealth management perspectives, and financial planning guidance from RADIANX CAPITAL." currentPath="/blog">
+
+<header class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="bh-tag">Knowledge &amp; Perspective</div>
+    <h1 class="bh-h">Insights from<br><em>the desk.</em></h1>
+    <p class="bh-desc">Market perspectives, wealth strategy, and financial planning guidance — written for clients and investors who think long-term.</p>
+  </div>
+</header>
+
+<section class="blog-grid-section">
+  <div class="blog-grid">
+
+    <article class="blog-card blog-card-featured rv">
+      <div class="bc-tag">Market Perspective</div>
+      <h2 class="bc-h">The Case for Active Risk Management in Volatile Markets</h2>
+      <p class="bc-excerpt">Passive investing has dominated the last decade. But as volatility returns and correlations shift, disciplined active risk management becomes not just preferable — but essential for preserving wealth.</p>
+      <div class="bc-meta">
+        <span class="bc-date">March 2025</span>
+        <span class="bc-read">8 min read</span>
+      </div>
+      <a href="/contact" class="bc-link">Read More →</a>
+    </article>
+
+    <article class="blog-card rv d1">
+      <div class="bc-tag">Tax Strategy</div>
+      <h2 class="bc-h">Tax-Loss Harvesting: Beyond the Year-End Rush</h2>
+      <p class="bc-excerpt">Most investors think about tax-loss harvesting in December. We think about it every day — and the difference in outcomes is significant.</p>
+      <div class="bc-meta">
+        <span class="bc-date">February 2025</span>
+        <span class="bc-read">5 min read</span>
+      </div>
+      <a href="/contact" class="bc-link">Read More →</a>
+    </article>
+
+    <article class="blog-card rv d2">
+      <div class="bc-tag">Estate Planning</div>
+      <h2 class="bc-h">Why Your Estate Plan Needs an Annual Review</h2>
+      <p class="bc-excerpt">Tax law changes, family circumstances evolve, and asset values shift. An estate plan written five years ago may no longer reflect your intentions — or the law.</p>
+      <div class="bc-meta">
+        <span class="bc-date">January 2025</span>
+        <span class="bc-read">6 min read</span>
+      </div>
+      <a href="/contact" class="bc-link">Read More →</a>
+    </article>
+
+    <article class="blog-card rv">
+      <div class="bc-tag">Retirement Planning</div>
+      <h2 class="bc-h">Social Security Timing: The Decision Worth $100,000+</h2>
+      <p class="bc-excerpt">When to claim Social Security is one of the highest-stakes financial decisions retirees face. The difference between optimal and suboptimal timing can exceed six figures in lifetime income.</p>
+      <div class="bc-meta">
+        <span class="bc-date">December 2024</span>
+        <span class="bc-read">7 min read</span>
+      </div>
+      <a href="/contact" class="bc-link">Read More →</a>
+    </article>
+
+    <article class="blog-card rv d1">
+      <div class="bc-tag">Fiduciary Standard</div>
+      <h2 class="bc-h">What "Fiduciary" Actually Means — And Why It Matters</h2>
+      <p class="bc-excerpt">The word is used often in financial services. But what does fiduciary obligation actually require — and how do you verify your adviser meets that standard?</p>
+      <div class="bc-meta">
+        <span class="bc-date">November 2024</span>
+        <span class="bc-read">4 min read</span>
+      </div>
+      <a href="/contact" class="bc-link">Read More →</a>
+    </article>
+
+    <article class="blog-card rv d2">
+      <div class="bc-tag">Alternative Investments</div>
+      <h2 class="bc-h">Private Equity in a Wealth Portfolio: Access, Risk, and Return</h2>
+      <p class="bc-excerpt">Private equity has historically offered return premiums over public markets. Understanding how to access it responsibly — and how to size it correctly — is a different matter entirely.</p>
+      <div class="bc-meta">
+        <span class="bc-date">October 2024</span>
+        <span class="bc-read">9 min read</span>
+      </div>
+      <a href="/contact" class="bc-link">Read More →</a>
+    </article>
+
+  </div>
+</section>
+
+<section class="blog-cta">
+  <div class="bcta-inner">
+    <h2 class="bcta-h">Stay informed.<br><em>Stay ahead.</em></h2>
+    <p class="bcta-body">Our insights are written for clients who want depth — not headlines. Speak with our team to discuss how these perspectives apply to your specific situation.</p>
+    <a href="/contact" class="btn-cta">Schedule a Consultation →</a>
+  </div>
+</section>
+
+</Layout>
+
+<style is:global>
+/* ── Blog Hero ── */
+.blog-hero {
+  background: #0b0b0d;
+  padding: 160px 64px 100px;
+  border-bottom: 1px solid rgba(238,240,245,.06);
+  position: relative;
+  overflow: hidden;
+}
+.blog-hero::before {
+  content: '';
+  position: absolute;
+  top: -10%; right: -5%;
+  width: 50%; height: 80%;
+  background: radial-gradient(ellipse at 70% 30%, rgba(122,150,168,.05) 0%, transparent 65%);
+  pointer-events: none;
+}
+.blog-hero-inner { max-width: 760px; position: relative; z-index: 1; }
+.bh-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 4px; text-transform: uppercase;
+  color: rgba(238,240,245,.35); margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+.bh-tag::before { content: ''; width: 28px; height: 1px; background: #7a96a8; opacity: .6; }
+.bh-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 6vw, 88px);
+  font-weight: 300; line-height: .95; letter-spacing: -2px;
+  color: #f0eeeb; margin-bottom: 32px;
+}
+.bh-h em { font-style: italic; color: rgba(240,238,235,.6); }
+.bh-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px; font-weight: 300;
+  color: rgba(238,240,245,.45); line-height: 1.8; max-width: 540px;
+}
+
+/* ── Blog Grid ── */
+.blog-grid-section {
+  background: #fafaf8;
+  padding: 72px 64px;
+  border-bottom: 1px solid rgba(13,17,23,.08);
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.blog-card {
+  background: #fff;
+  border: 1px solid rgba(13,17,23,.08);
+  border-radius: 2px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: box-shadow .25s, transform .25s, border-color .25s;
+  position: relative;
+  overflow: hidden;
+}
+.blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: #1a2e52;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .4s;
+}
+.blog-card:hover { box-shadow: 0 8px 32px rgba(13,17,23,.08); transform: translateY(-3px); border-color: rgba(13,17,23,.12); }
+.blog-card:hover::before { transform: scaleX(1); }
+.blog-card-featured { grid-column: span 3; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.blog-card-featured .bc-h { font-size: clamp(22px, 2.5vw, 32px); }
+
+.bc-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #1a2e52; opacity: .65; margin-bottom: 14px;
+}
+.bc-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 400; color: #0d1117;
+  line-height: 1.2; margin-bottom: 14px;
+  transition: color .2s;
+}
+.blog-card:hover .bc-h { color: #1a2e52; }
+.bc-excerpt {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px; font-weight: 300;
+  color: rgba(13,17,23,.55); line-height: 1.78;
+  flex: 1; margin-bottom: 20px;
+}
+.bc-meta {
+  display: flex; gap: 16px; margin-bottom: 20px;
+  align-items: center;
+}
+.bc-date, .bc-read {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 1.5px;
+  color: rgba(13,17,23,.3); text-transform: uppercase;
+}
+.bc-date::after { content: '·'; margin-left: 16px; }
+.bc-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #1a2e52; text-decoration: none;
+  transition: letter-spacing .2s;
+}
+.bc-link:hover { letter-spacing: 3px; }
+
+/* ── Blog CTA ── */
+.blog-cta {
+  background: #0e1220;
+  padding: 96px 64px;
+}
+.bcta-inner {
+  max-width: 600px; margin: 0 auto; text-align: center;
+}
+.bcta-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 300; line-height: 1.1;
+  color: #f0eeeb; margin-bottom: 20px;
+}
+.bcta-h em { font-style: italic; color: rgba(240,238,235,.55); }
+.bcta-body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px; font-weight: 300;
+  color: rgba(238,240,245,.4); line-height: 1.8; margin-bottom: 36px;
+}
+.btn-cta {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #0e1220; background: #f0eeeb;
+  border-radius: 2px; padding: 14px 32px;
+  text-decoration: none; display: inline-block;
+  transition: background .25s;
+}
+.btn-cta:hover { background: #fff; }
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .blog-hero { padding: 140px 40px 80px; }
+  .blog-grid-section { padding: 56px 40px; }
+  .blog-grid { grid-template-columns: 1fr 1fr; }
+  .blog-card-featured { grid-column: span 2; grid-template-columns: 1fr; gap: 0; }
+  .blog-cta { padding: 72px 40px; }
+}
+@media (max-width: 640px) {
+  .blog-hero { padding: 120px 20px 64px; }
+  .blog-grid-section { padding: 40px 20px; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-card-featured { grid-column: span 1; }
+  .blog-cta { padding: 64px 20px; }
+}
+
+.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.rv.in { opacity: 1; transform: none; }
+.rv.d1 { transition-delay: .1s; }
+.rv.d2 { transition-delay: .2s; }
+</style>
+
+<script is:inline>
+const io = new IntersectionObserver(e => e.forEach(x => {
+  if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); }
+}), { threshold: .08 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+

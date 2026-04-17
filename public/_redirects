@@ -1,0 +1,2 @@
+# Cloudflare Pages handles clean URLs natively - no rules needed
+# Adding rules here caused redirect loops

@@ -1,0 +1,229 @@
+---
+const links = [
+  { href: '/about',    label: 'About'    },
+  { href: '/services', label: 'Services' },
+  { href: '/approach', label: 'Approach' },
+  { href: '/blog',     label: 'Insights' },
+];
+const { currentPath } = Astro.props;
+---
+
+<nav id="nav">
+
+  <div class="nav-brand">
+    <a href="/" class="logo" aria-label="RADIANX CAPITAL Home">
+      <img
+        src="/images/logo-transparent.png"
+        alt="RADIANX"
+        class="logo-img"
+        draggable="false"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+      />
+      <span class="logo-fallback">RADIANX</span>
+    </a>
+  </div>
+
+  <ul class="nav-links" role="list">
+    {links.map(l => (
+      <li><a href={l.href} class={currentPath === l.href ? 'active' : ''}>{l.label}</a></li>
+    ))}
+    
+  </ul>
+
+  <div class="nav-actions">
+    <a href="/login" class="nav-login">Login</a>
+    <a href="/contact" class="nav-cta">Get Started</a>
+  </div>
+
+  <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+
+</nav>
+
+<div class="mobile-drawer" id="mobileDrawer" hidden>
+  <ul>
+    {links.map(l => <li><a href={l.href}>{l.label}</a></li>)}
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
+
+<style>
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  height: 72px;
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  align-items: center;
+  padding: 0 56px;
+  background: #fff;
+  border-bottom: 1px solid rgba(14,18,30,.08);
+  box-shadow: 0 1px 16px rgba(14,18,30,.05);
+}
+
+/* ── Brand ── */
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 0;
+  transition: opacity .2s;
+}
+.logo:hover { opacity: .8; }
+
+.logo-img {
+  height: 46px;
+  width: auto;
+  max-width: 160px;
+  display: block;
+  object-fit: contain;
+}
+
+.logo-fallback {
+  display: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #0e1220;
+  align-items: center;
+}
+
+/* ── Center links ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+.nav-links a {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(14,18,30,.48);
+  text-decoration: none;
+  padding: 6px 18px;
+  transition: color .2s;
+  display: block;
+  white-space: nowrap;
+}
+.nav-links a:hover,
+.nav-links a.active { color: #0e1220; }
+.nav-phone { font-family: 'DM Mono', monospace !important; font-size: 11px !important; letter-spacing: 1px; }
+
+/* ── CTA ── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.nav-login {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(14,18,30,.55);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.nav-login:hover { color: #0e1220; }
+.nav-cta {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #0e1220;
+  border-radius: 2px;
+  padding: 10px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .25s;
+}
+.nav-cta:hover { background: #1a2e52; }
+
+/* ── Burger ── */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  justify-self: end;
+}
+.burger span {
+  display: block;
+  width: 22px; height: 1.5px;
+  background: #0e1220;
+  border-radius: 1px;
+  transition: all .3s;
+}
+
+/* ── Drawer ── */
+.mobile-drawer {
+  position: fixed;
+  top: 72px; left: 0; right: 0;
+  z-index: 499;
+  background: #fff;
+  border-bottom: 1px solid rgba(14,18,30,.08);
+  padding: 20px 28px 28px;
+}
+.mobile-drawer ul { list-style: none; display: flex; flex-direction: column; gap: 0; margin: 0; padding: 0; }
+.mobile-drawer a {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px; font-weight: 300;
+  color: rgba(14,18,30,.65);
+  text-decoration: none;
+  padding: 13px 0;
+  display: block;
+  border-bottom: 1px solid rgba(14,18,30,.06);
+  transition: color .2s;
+}
+.mobile-drawer a:hover { color: #0e1220; }
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  nav { grid-template-columns: 180px 1fr 180px; padding: 0 36px; }
+  .nav-links a { padding: 6px 12px; font-size: 12.5px; }
+}
+@media (max-width: 900px) {
+  nav { grid-template-columns: 1fr auto; padding: 0 24px; height: 68px; }
+  .nav-links { display: none; }
+  .nav-actions { display: none; }
+  .burger { display: flex; }
+  .logo-img { height: 38px; }
+  .mobile-drawer { top: 68px; }
+}
+@media (max-width: 480px) {
+  nav { padding: 0 18px; }
+  .logo-img { height: 34px; }
+}
+</style>
+
+<script>
+const burger = document.querySelector('.burger');
+const drawer = document.getElementById('mobileDrawer');
+burger?.addEventListener('click', () => {
+  const open = burger.getAttribute('aria-expanded') === 'true';
+  burger.setAttribute('aria-expanded', String(!open));
+  if (drawer) drawer.hidden = open;
+});
+drawer?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    if (drawer) drawer.hidden = true;
+    burger?.setAttribute('aria-expanded', 'false');
+  });
+});
+</script>

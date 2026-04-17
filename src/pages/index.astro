@@ -1,0 +1,1930 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="RADIANX CAPITAL — Precision Wealth Management · New York">
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="h-label rv">
+        <span></span>
+        SEC Registered Investment Adviser · New York
+        <span></span>
+      </p>
+      <h1 class="hero-h rv">
+        Where Precision<br>
+        <em>Meets</em> Capital.
+      </h1>
+      <p class="hero-sub rv">
+        A <strong>fiduciary investment adviser</strong> managing nearly
+        $1 billion in assets for high-net-worth individuals,
+        families, and institutions — since 2017.
+      </p>
+      <div class="hero-btns rv">
+        <a href="/contact" class="btn-primary">Get Started</a>
+        <a href="/services" class="btn-secondary">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-meta rv">
+      {['SEC Registered','Fiduciary Standard','Fee-Only','$953M+ AUM','Est. 2017, New York'].map(t => (
+        <span class="hero-tag">{t}</span>
+      ))}
+    </div>
+  </section>
+
+
+  <!-- ══ PRESS LOGOS ══ -->
+  <div class="press-bar">
+    <span class="press-label">As Seen In</span>
+    <div class="press-track-wrap">
+      <div class="press-track">
+        <span class="press-item">The Wall Street Journal</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Bloomberg</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Forbes</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Financial Times</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Barron's</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">CNBC</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Reuters</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">The Wall Street Journal</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Bloomberg</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Forbes</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Financial Times</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Barron's</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">CNBC</span>
+        <span class="press-sep">·</span>
+        <span class="press-item">Reuters</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    {[
+      {num:'$953M+', label:'Assets Under Management', sub:'Current SEC filing'},
+      {num:'8+',     label:'Years in Operation',      sub:'Founded Nov 2017'},
+      {num:'100%',   label:'Fiduciary Standard',      sub:'Always'},
+      {num:'SEC',    label:'Registered Adviser',      sub:'No. 801-117100'},
+    ].map((s,i) => (
+      <div class={`sbar rv${i>0?` d${i}`:''}`}>
+        <div class="sbar-num">{s.num}</div>
+        <div class="sbar-label">{s.label}</div>
+        <div class="sbar-sub">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <img src="/images/hero-office.jpg" alt="RADIANX CAPITAL office, Midtown Manhattan" loading="lazy"/>
+    <div class="photo-strip-overlay"></div>
+    <p class="photo-strip-txt">Eight years of<br><em>measured conviction.</em></p>
+    <span class="photo-year">New York · Est. 2017</span>
+  </div>
+
+  <!-- SERVICES -->
+
+  <!-- ══ FEATURES ══ -->
+
+  <!-- ══ PLATFORM SECTION ══ -->
+  <section class="platform-section">
+    <div class="platform-inner">
+
+      <div class="platform-header rv">
+        <div class="platform-tag">Beyond Wealth Management</div>
+        <h2 class="platform-h">Three ways to grow<br><em>your capital.</em></h2>
+        <p class="platform-sub">RADIANX operates across the full spectrum of capital markets — from long-term wealth management to active trading and spot execution.</p>
+      </div>
+
+      <div class="platform-grid">
+
+        <div class="platform-card rv">
+          <div class="pc-icon">
+            <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+              <path d="M4 24L12 14l6 6 10-12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="18" cy="20" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="pc-num">01</div>
+          <h3 class="pc-title">Wealth Management</h3>
+          <p class="pc-desc">Bespoke portfolio construction, financial planning, tax optimisation and estate strategy — built entirely around your long-term objectives as a fiduciary adviser.</p>
+          <ul class="pc-list">
+            <li>SEC-registered fiduciary</li>
+            <li>Custom portfolio construction</li>
+            <li>Integrated tax & estate planning</li>
+          </ul>
+          <a href="/services" class="pc-link">Explore Services →</a>
+        </div>
+
+        <div class="platform-card platform-card-accent rv d1">
+          <div class="pc-icon">
+            <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+              <rect x="3" y="18" width="5" height="9" rx="1" stroke="currentColor" stroke-width="1.8"/>
+              <rect x="11" y="11" width="5" height="16" rx="1" stroke="currentColor" stroke-width="1.8"/>
+              <rect x="19" y="5" width="5" height="22" rx="1" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M5.5 14l6-6 6 5 8-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="pc-num">02</div>
+          <h3 class="pc-title">Active Trading</h3>
+          <p class="pc-desc">Institutional-grade active trading strategies across equities, derivatives, and structured products — executed with disciplined risk frameworks and real-time market intelligence.</p>
+          <ul class="pc-list">
+            <li>Multi-asset class execution</li>
+            <li>Quantitative & discretionary strategies</li>
+            <li>Real-time risk management</li>
+          </ul>
+          <a href="/contact" class="pc-link">Start Trading →</a>
+        </div>
+
+        <div class="platform-card rv d2">
+          <div class="pc-icon">
+            <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+              <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M16 8v8l5 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M8 4l2 3M24 4l-2 3M4 24l3-2M28 24l-3-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="pc-num">03</div>
+          <h3 class="pc-title">Spot Platform</h3>
+          <p class="pc-desc">Direct access to spot markets with competitive pricing, deep liquidity, and institutional-level execution. Trade currencies, commodities, and digital assets with precision and speed.</p>
+          <ul class="pc-list">
+            <li>Competitive spot pricing</li>
+            <li>Deep institutional liquidity</li>
+            <li>Fast, reliable execution</li>
+          </ul>
+          <a href="/contact" class="pc-link">Access Platform →</a>
+        </div>
+
+      </div>
+
+      <div class="platform-bottom rv">
+        <div class="pb-stat">
+          <div class="pb-val">$953M+</div>
+          <div class="pb-label">Under Management</div>
+        </div>
+        <div class="pb-divider"></div>
+        <div class="pb-stat">
+          <div class="pb-val">3</div>
+          <div class="pb-label">Capital Solutions</div>
+        </div>
+        <div class="pb-divider"></div>
+        <div class="pb-stat">
+          <div class="pb-val">8+</div>
+          <div class="pb-label">Years Active</div>
+        </div>
+        <div class="pb-divider"></div>
+        <div class="pb-stat">
+          <div class="pb-val">SEC</div>
+          <div class="pb-label">Registered & Regulated</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="features-section">
+
+    <div class="feat feat-img-right">
+      <div class="feat-text rv">
+        <div class="feat-tag">Fiduciary First</div>
+        <h2 class="feat-h">Your interests.<br><em>Always first.</em></h2>
+        <p class="feat-body">As an SEC-registered investment adviser operating under the fiduciary standard, we are legally obligated to act in your best interest — at every moment, on every decision. No commissions. No conflicts of interest. Just clear, objective advice aligned entirely with your goals.</p>
+        <ul class="feat-list">
+          <li>No commission-based products, ever</li>
+          <li>Full transparency on all fees and costs</li>
+          <li>Objective advice with zero hidden incentives</li>
+        </ul>
+        <a href="/about" class="btn-outline rv">How We Operate →</a>
+      </div>
+      <div class="feat-visual rv">
+        <div class="feat-card-stack">
+          <div class="f-card f-card-1">
+            <div class="f-card-label">Fiduciary Standard</div>
+            <div class="f-card-val">100%</div>
+            <div class="f-card-sub">Always legally bound to you</div>
+          </div>
+          <div class="f-card f-card-2">
+            <div class="f-card-label">Commission Income</div>
+            <div class="f-card-val">$0</div>
+            <div class="f-card-sub">Zero. Not a single dollar.</div>
+          </div>
+          <div class="f-card f-card-3">
+            <div class="f-card-label">SEC Registration</div>
+            <div class="f-card-val">CRD# 298178</div>
+            <div class="f-card-sub">Active since November 2017</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat feat-img-left">
+      <div class="feat-visual rv">
+        <div class="feat-chart-mock">
+          <div class="fcm-label">Portfolio Performance</div>
+          <div class="fcm-bars">
+            <div class="fcm-bar" style="height:45%"><span>Q1</span></div>
+            <div class="fcm-bar" style="height:62%"><span>Q2</span></div>
+            <div class="fcm-bar" style="height:51%"><span>Q3</span></div>
+            <div class="fcm-bar fcm-bar-hi" style="height:78%"><span>Q4</span></div>
+            <div class="fcm-bar" style="height:58%"><span>Q1</span></div>
+            <div class="fcm-bar fcm-bar-hi" style="height:84%"><span>Q2</span></div>
+          </div>
+          <div class="fcm-footer">Risk-adjusted returns · Bespoke to your profile</div>
+        </div>
+      </div>
+      <div class="feat-text rv">
+        <div class="feat-tag">Investment Management</div>
+        <h2 class="feat-h">Portfolios built<br><em>from scratch.</em></h2>
+        <p class="feat-body">We don't use model portfolios or pre-packaged products. Every portfolio is constructed from the ground up — calibrated to your specific goals, tax situation, time horizon, and risk tolerance. Then monitored and refined continuously as your life evolves.</p>
+        <ul class="feat-list">
+          <li>Custom allocation across all asset classes</li>
+          <li>Continuous active risk management</li>
+          <li>Tax-loss harvesting integrated at every level</li>
+        </ul>
+        <a href="/services#investment" class="btn-outline rv">Explore Investments →</a>
+      </div>
+    </div>
+
+    <div class="feat feat-img-right">
+      <div class="feat-text rv">
+        <div class="feat-tag">Financial Planning</div>
+        <h2 class="feat-h">A plan that<br><em>evolves with you.</em></h2>
+        <p class="feat-body">Your financial plan is not a one-time document — it is a living framework that we revisit, stress-test, and refine as your life changes. We map every dimension: income, obligations, protection, education, retirement, and legacy — and keep it all in alignment.</p>
+        <ul class="feat-list">
+          <li>360° view of your complete financial life</li>
+          <li>Integrated retirement & estate planning</li>
+          <li>Regular reviews tied to life events</li>
+        </ul>
+        <a href="/services#planning" class="btn-outline rv">See Financial Planning →</a>
+      </div>
+      <div class="feat-visual rv">
+        <div class="feat-timeline">
+          <div class="ftl-item">
+            <div class="ftl-dot"></div>
+            <div class="ftl-content">
+              <div class="ftl-label">Discovery</div>
+              <div class="ftl-desc">Full financial picture mapped</div>
+            </div>
+          </div>
+          <div class="ftl-item">
+            <div class="ftl-dot"></div>
+            <div class="ftl-content">
+              <div class="ftl-label">Strategy Design</div>
+              <div class="ftl-desc">Bespoke plan across all areas</div>
+            </div>
+          </div>
+          <div class="ftl-item">
+            <div class="ftl-dot"></div>
+            <div class="ftl-content">
+              <div class="ftl-label">Implementation</div>
+              <div class="ftl-desc">Executed with institutional precision</div>
+            </div>
+          </div>
+          <div class="ftl-item ftl-active">
+            <div class="ftl-dot"></div>
+            <div class="ftl-content">
+              <div class="ftl-label">Continuous Review</div>
+              <div class="ftl-desc">Adapts as your life evolves</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="light-section" id="services">
+    <div class="ls-inner">
+      <div class="srv-head">
+        <div>
+          <div class="ls-tag rv">What We Offer</div>
+          <h2 class="ls-h rv">Comprehensive<br><em>wealth services</em></h2>
+        </div>
+        <p class="srv-desc rv">Every service tailored to your individual financial architecture — not templated, not generic.</p>
+      </div>
+
+      <div class="chips rv" id="chips">
+        {[
+          {key:'all',  label:'All Services'},
+          {key:'inv',  label:'Investment Management'},
+          {key:'plan', label:'Financial Planning'},
+          {key:'tax',  label:'Tax Optimization'},
+          {key:'est',  label:'Trust & Estate'},
+          {key:'ret',  label:'Retirement'},
+          {key:'alt',  label:'Alternatives'},
+        ].map(c => (
+          <button class={`chip${c.key==='all'?' on':''}`} data-filter={c.key}>{c.label}</button>
+        ))}
+      </div>
+
+      <div class="srv-grid rv" id="srvGrid">
+        {[
+          {key:'inv', n:'01', id:'investment',  t:'Investment Management',  d:'Bespoke portfolio construction driven by data and disciplined risk management — built from scratch for your objectives.'},
+          {key:'plan',n:'02', id:'planning',    t:'Financial Planning',      d:'A comprehensive financial blueprint across retirement, cash flow, insurance, education, and legacy — revisited as life evolves.'},
+          {key:'tax', n:'03', id:'tax',         t:'Tax Optimization',        d:'Tax strategy embedded into every investment decision — minimising liabilities, maximising after-tax wealth.'},
+          {key:'est', n:'04', id:'estate',      t:'Trust & Estate Planning', d:'Precision-structured strategies — CRTs, GRATs, SLATs — to protect and transfer wealth across generations.'},
+          {key:'ret', n:'05', id:'retirement',  t:'Retirement Planning',     d:'Sustainable income architecture designed to support your lifestyle for life — regardless of market conditions.'},
+          {key:'alt', n:'06', id:'alternatives',t:'Alternative Investments', d:'Curated access to private equity, real assets, and hedge strategies — rigorously vetted and portfolio-integrated.'},
+        ].map(s => (
+          <a href={`/services#${s.id}`} class="srv-card" data-key={s.key}>
+            <span class="sc-bg-num" aria-hidden="true">{s.n}</span>
+            <span class="sc-num">{s.n}</span>
+            <span class="sc-t">{s.t}</span>
+            <span class="sc-d">{s.d}</span>
+            <span class="sc-arr">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        ))}
+      </div>
+
+      <div class="rv" style="margin-top:36px">
+        <a href="/services" class="btn-outline">Explore All Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <div class="about-photo rv">
+      <img src="/images/photo-office-detail.jpg" alt="RADIANX CAPITAL workspace" loading="lazy"/>
+    </div>
+    <div class="about-copy">
+      <div class="ls-tag rv">Our Philosophy</div>
+      <h2 class="ls-h rv" style="margin-bottom:24px">Capital managed<br>with <em>exactitude</em></h2>
+      <p class="ls-body rv">At RADIANX CAPITAL, lasting wealth is built on clarity, discipline, and precision. We construct strategies that endure market cycles and life transitions alike.</p>
+      <p class="ls-body rv">As a fully registered fiduciary, our sole obligation is to you. No hidden incentives. No commissions. Transparent counsel calibrated to your long-term interests.</p>
+      <ul class="val-grid rv">
+        {[
+          {n:'01', t:'Fiduciary by Design',   d:'Legally bound to act in your best interest. No conflicts, no commissions.'},
+          {n:'02', t:'Institutional Rigor',    d:'Analytical standards of the world\'s leading institutions — with personal attention.'},
+          {n:'03', t:'Transparent Fees',       d:'Fees are clear. Communication is open. No surprises, ever.'},
+          {n:'04', t:'Long-Term Thinking',     d:'Every decision made through a long-term lens — resistant to noise and sentiment.'},
+        ].map(v => (
+          <li class="val-item">
+            <span class="val-n">{v.n}</span>
+            <div><div class="val-t">{v.t}</div><div class="val-d">{v.d}</div></div>
+          </li>
+        ))}
+      </ul>
+      <a href="/about" class="btn-outline rv">About the Firm →</a>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="light-section" id="team">
+    <div class="ls-inner">
+      <div class="ls-tag rv">Leadership</div>
+      <h2 class="ls-h rv" style="margin-bottom:48px">The people behind<br><em>your capital</em></h2>
+      <div class="team-grid">
+        {[
+          {img:'/images/photo-li-tan.jpg',       init:'LT', role:'Principal',          name:'Li Tan',       title:'Co-Founder & Managing Principal', bio:'Over 30 years of investment management experience. Specialises in tax-efficient portfolio construction and long-term wealth architecture for high-net-worth families.'},
+          {img:'/images/photo-david-su.jpg',      init:'DS', role:'Principal',          name:'David Su',     title:'Co-Founder & Senior Adviser',     bio:'Three decades serving high-net-worth families. Focuses on retirement income architecture, estate planning coordination, and complex financial transitions.'},
+          {img:'/images/photo-douglas-beyer.jpg', init:'DB', role:'Investment Adviser', name:'Douglas Beyer',title:'Investment Adviser & Analyst',     bio:'Combines analytical rigour with a contemporary approach to portfolio research. Focuses on high-conviction opportunities and optimal portfolio positioning.'},
+        ].map((m,i) => (
+          <div class={`tm-card rv${i>0?` d${i}`:''}`}>
+            <div class="tm-inner">
+              <div class="tm-front">
+                <div class="tm-photo">
+                  <img src={m.img} alt={m.name} width="72" height="72" loading="lazy"
+                    onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}/>
+                  <span class="tm-init" style="display:none">{m.init}</span>
+                </div>
+                <div class="tm-role">{m.role}</div>
+                <div class="tm-name">{m.name}</div>
+                <div class="tm-title">{m.title}</div>
+                <p class="tm-bio">{m.bio}</p>
+                <span class="tm-hover-hint">Hover to connect →</span>
+              </div>
+              <div class="tm-back">
+                <div class="tm-back-name">{m.name}</div>
+                <div class="tm-back-title">{m.title}</div>
+                <div class="tm-back-divider"></div>
+                <p class="tm-back-bio">{m.bio}</p>
+                <a href="/contact" class="tm-back-cta">Schedule a Call →</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH — dark band -->
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="testi-section">
+    <div class="testi-inner">
+      <div class="testi-head rv">
+        <div class="ls-tag">Client Perspectives</div>
+        <h2 class="ls-h">What our clients<br><em>experience</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card rv">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">RADIANX transformed how I think about my wealth. For the first time, everything — investments, taxes, estate — works as one coherent strategy. The clarity alone is worth it.</p>
+          <div class="testi-reveal">
+            <div class="testi-reveal-line"></div>
+          </div>
+          <div class="testi-author">
+            <div class="testi-avatar">ST</div>
+            <div>
+              <div class="testi-name">Senior Technology Executive</div>
+              <div class="testi-meta">Client since 2019 · New York</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card rv d1">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">I've worked with three advisers over the years. None came close to the rigor and transparency RADIANX brings. They think about my money the way I think about my business — long-term, methodically.</p>
+          <div class="testi-author">
+            <div class="testi-name">Private Equity Partner</div>
+            <div class="testi-meta">Client since 2020 · New York</div>
+          </div>
+        </div>
+        <div class="testi-card rv d2">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">What sets RADIANX apart is that they actually explain every decision. I understand my portfolio, my tax strategy, and my plan. No black boxes. That trust is rare in this industry.</p>
+          <div class="testi-author">
+            <div class="testi-name">Healthcare Founder</div>
+            <div class="testi-meta">Client since 2021 · New Jersey</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach-band">
+    <div class="ab-inner">
+      <div class="ab-left">
+        <div class="dk-tag rv">How We Work</div>
+        <h2 class="dk-h rv">A disciplined<br><em>four-step process</em></h2>
+        <p class="dk-body rv">From first conversation to ongoing stewardship — a structured process that produces consistent, disciplined outcomes for every client.</p>
+        <a href="/approach" class="btn-dark rv">Full Methodology →</a>
+      </div>
+      <div class="steps-grid">
+        {[
+          {n:'01',t:'Discovery',   d:'An unhurried conversation about your full financial life — goals, concerns, timeline, and what wealth means to you.'},
+          {n:'02',t:'Architecture',d:'A comprehensive financial blueprint — tax-efficient, risk-calibrated, built precisely around your circumstances.'},
+          {n:'03',t:'Execution',   d:'Institutional-grade implementation — every position, every tax implication managed with precision.'},
+          {n:'04',t:'Stewardship', d:'Daily monitoring, annual reviews — your strategy evolves continuously as your life does.'},
+        ].map((s,i) => (
+          <div class={`step-card rv${i>0?` d${i}`:''}`}>
+            <div class="step-n">{s.n}</div>
+            <div class="step-t">{s.t}</div>
+            <div class="step-d">{s.d}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- REG BAR -->
+  <div class="reg-bar">
+    <div class="rb-items rv">
+      {[
+        {l:'SEC',     v:'No. 801-117100'},
+        {l:'CRD',     v:'298178'},
+        {l:'EIN',     v:'82-3414149'},
+        {l:'Founded', v:'November 2017'},
+        {l:'Office',  v:'529 5th Ave, Suite 1475, New York'},
+      ].map(r => (
+        <div class="rb-item">
+          <span class="rb-l">{r.l}</span>
+          <span class="rb-v">{r.v}</span>
+        </div>
+      ))}
+    </div>
+    <div class="rb-pills rv">
+      {['Fiduciary · Always','Fee-Only','SEC Registered','Form ADV Available'].map(p => (
+        <span class="rb-pill">{p}</span>
+      ))}
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="dk-h rv" style="max-width:560px">Your wealth deserves<br><em>precise attention.</em></h2>
+      <div class="cta-right rv">
+
+        <p class="cta-note">529 5th Avenue, Suite 1475 · New York, NY 10017<br>Complimentary consultation for qualified prospective clients.</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style is:global>:root {
+  /* ── Index page tokens (light theme) ── */
+  --ink:     #0d1117;
+  --ink2:    rgba(13,17,23,.55);
+  --ink3:    rgba(13,17,23,.48);
+  --rule:    rgba(13,17,23,.09);
+  --rule2:   rgba(13,17,23,.05);
+  --paper:   #fafaf8;
+  --navy:    #1a2e52;
+  --acc-dim: rgba(26,46,82,.07);
+  --acc-brd: rgba(26,46,82,.18);
+}
+
+
+/* ══ TOKENS ══ */
+
+/* ══ HERO ══ */
+.hero {
+  min-height: calc(100vh - 68px);
+  margin-top: 68px;
+  background: #0d1117;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 64px 80px;
+  position: relative;
+  overflow: hidden;
+}
+/* Full-bleed photo with deep overlay */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    url('/images/hero-office.jpg') center/cover no-repeat;
+  filter: brightness(.72) saturate(.85);
+  background-position: center 30%;
+}
+/* Light overlay — photo is already dark */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to bottom,
+      rgba(8,12,20,.55) 0%,
+      rgba(8,12,20,.35) 35%,
+      rgba(8,12,20,.55) 100%);
+}
+.hero-inner {
+  max-width: 820px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.h-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(230,225,215,.55);
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.h-label span {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: rgba(230,225,215,.25);
+}
+.hero-h {
+  font-family: var(--serif);
+  font-size: clamp(58px, 9vw, 126px);
+  font-weight: 300;
+  line-height: .92;
+  letter-spacing: -3px;
+  color: #edeae2;
+  margin-bottom: 34px;
+  text-shadow: 0 2px 40px rgba(0,0,0,.25);
+}
+.hero-h em {
+  font-style: italic;
+  color: #c8d4e8;
+}
+.hero-sub {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-weight: 300;
+  color: rgba(220,215,200,.65);
+  line-height: 1.82;
+  max-width: 500px;
+  margin: 0 auto 52px;
+}
+.hero-sub strong { color: rgba(237,234,226,.88); font-weight: 500; }
+.hero-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0d1117;
+  background: #edeae2;
+  border: 1px solid #edeae2;
+  border-radius: 2px;
+  padding: 14px 32px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background .25s;
+}
+.btn-primary:hover { background: #fff; border-color: #fff; }
+.btn-secondary {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(220,215,200,.75);
+  background: transparent;
+  border: 1px solid rgba(220,215,200,.3);
+  border-radius: 2px;
+  padding: 14px 32px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .25s;
+}
+.btn-secondary:hover { border-color: rgba(220,215,200,.6); color: #edeae2; }
+.hero-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(220,215,200,.15);
+  width: 100%;
+  padding-top: 28px;
+  position: relative;
+  z-index: 2;
+}
+.hero-tag {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(220,215,200,.4);
+  padding: 0 24px;
+  border-right: 1px solid rgba(220,215,200,.15);
+}
+.hero-tag:last-child { border-right: none; }
+
+/* ══ STATS ══ */
+.stats-bar {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+}
+.sbar {
+  padding: 48px 44px; border-right: 1px solid var(--rule);
+  position: relative; overflow: hidden; transition: background .3s;
+}
+.sbar:last-child { border-right: none; }
+.sbar:hover { background: #faf9f6; }
+.sbar::after {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--navy); transform: scaleX(0); transform-origin: left;
+  transition: transform .45s;
+}
+.sbar:hover::after { transform: scaleX(1); }
+.sbar-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 3.5vw, 54px); font-weight: 300;
+  color: var(--ink); line-height: 1; margin-bottom: 8px; transition: color .3s;
+}
+.sbar:hover .sbar-num { color: var(--navy); }
+.sbar-label {
+  font-family: 'DM Mono', monospace; font-size: 9.5px;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--ink3);
+}
+.sbar-sub { font-family: 'Outfit', sans-serif; font-size: 12px; color: #bbb; margin-top: 4px; }
+
+/* ══ PHOTO STRIP ══ */
+.photo-strip { position: relative; height: 55vh; min-height: 360px; overflow: hidden; border-bottom: 1px solid var(--rule); }
+.photo-strip img { width:100%; height:100%; object-fit:cover; filter:brightness(.5) saturate(.8); display:block; }
+.photo-strip-overlay { position:absolute; inset:0; background:linear-gradient(90deg,rgba(7,8,12,.78) 0%,rgba(7,8,12,.1) 60%); }
+.photo-strip-txt { position:absolute; left:64px; bottom:52px; font-family:'Cormorant Garamond',serif; font-size:clamp(30px,4vw,56px); font-weight:300; color:#fff; line-height:1.1; letter-spacing:-.5px; }
+.photo-strip-txt em { font-style:italic; opacity:.65; }
+.photo-year { position:absolute; right:64px; top:48px; font-family:'DM Mono',monospace; font-size:10px; letter-spacing:3px; color:rgba(255,255,255,.28); text-transform:uppercase; }
+
+/* ══ LIGHT SECTIONS ══ */
+.light-section { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.ls-inner { max-width: 1320px; margin: 0 auto; padding: 96px 64px; }
+.ls-tag {
+  font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px;
+  text-transform: uppercase; color: var(--ink3);
+  margin-bottom: 14px; display: flex; align-items: center; gap: 12px;
+}
+.ls-tag::before { content: ''; width: 24px; height: 1px; background: var(--ink3); opacity: .5; }
+.ls-h { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 3.8vw, 50px); font-weight: 300; line-height: 1.08; letter-spacing: -.5px; color: var(--ink); }
+.ls-h em { font-style: italic; color: var(--navy); }
+.ls-body { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 300; color: var(--ink2); line-height: 1.82; margin-bottom: 16px; }
+.btn-outline {
+  font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--navy); background: transparent;
+  border: 1.5px solid var(--acc-brd); border-radius: 2px; padding: 13px 30px;
+  transition: all .3s; text-decoration: none; display: inline-block;
+}
+.btn-outline:hover { background: var(--acc-dim); border-color: var(--navy); }
+
+/* ══ SERVICES / CHIPS ══ */
+.srv-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid var(--rule); gap: 40px; flex-wrap: wrap; }
+.srv-desc { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 300; color: var(--ink3); line-height: 1.75; max-width: 280px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.chip { font-family: 'DM Mono', monospace; font-size: 9.5px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--ink3); border: 1px solid var(--rule); border-radius: 40px; padding: 8px 18px; cursor: pointer; background: var(--white); transition: all .2s; }
+.chip:hover, .chip.on { color: var(--navy); border-color: var(--acc-brd); background: var(--acc-dim); }
+.srv-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.srv-card { background: var(--white); padding: 40px 32px 36px; position: relative; overflow: hidden; transition: background .3s; text-decoration: none; display: block; color: inherit; }
+.srv-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--navy); transform: scaleX(0); transform-origin: left; transition: transform .4s; }
+.srv-card:hover { background: #faf9f6; }
+.srv-card:hover::before { transform: scaleX(1); }
+.srv-card[hidden] { display: none; }
+.sc-num { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; color: rgba(13,17,23,.3); margin-bottom: 24px; }
+.sc-t { display: block; font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: var(--ink); margin-bottom: 10px; line-height: 1.2; transition: color .3s; }
+.srv-card:hover .sc-t { color: var(--navy); }
+.sc-d { display: block; font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 300; color: rgba(13,17,23,.58); line-height: 1.72; }
+.sc-arr { position: absolute; bottom: 24px; right: 24px; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--navy); opacity: 0.5; transform: translateX(0); transition: all .3s; }
+.srv-card:hover .sc-arr { opacity: 1; transform: translateX(0); }
+
+/* ══ ABOUT ══ */
+.about-section { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); border-bottom: 1px solid var(--rule); }
+.about-photo { overflow: hidden; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.88) saturate(.8); display: block; transition: transform .6s; }
+.about-photo:hover img { transform: scale(1.02); }
+.about-copy { padding: 88px 72px; display: flex; flex-direction: column; gap: 0; }
+.val-grid { list-style: none; margin: 28px 0 36px; display: flex; flex-direction: column; }
+.val-item { display: grid; grid-template-columns: 28px 1fr; gap: 14px; padding: 18px 0; border-bottom: 1px solid #f0eeea; transition: padding-left .2s; }
+.val-item:first-child { border-top: 1px solid #f0eeea; }
+.val-item:hover { padding-left: 8px; }
+.val-n { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--navy); opacity: .5; padding-top: 2px; }
+.val-t { font-family: 'Outfit', sans-serif; font-size: 14.5px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+.val-d { font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 300; color: var(--ink3); line-height: 1.65; }
+
+/* ══ TEAM ══ */
+.team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.tm-card { background: transparent; border: none; border-radius: 2px; padding: 0; position: relative; overflow: visible; transition: all .3s; }
+.tm-card-old-before { display: none; }
+.tm-card-hover-old { display: none; }
+.tm-card-hover2-old { display: none; }
+.tm-photo { width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin-bottom: 20px; border: 2px solid var(--rule); transition: border-color .3s; flex-shrink: 0; }
+.tm-front:hover .tm-photo { border-color: rgba(29,45,69,.3); }
+.tm-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(10%); display: block; }
+.tm-init { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #f0eeea; font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300; color: var(--ink3); }
+.tm-role { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ink3); margin-bottom: 6px; }
+.tm-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--ink); margin-bottom: 4px; line-height: 1.1; transition: color .3s; }
+.tm-card:hover .tm-name { color: var(--navy); }
+.tm-title { font-family: 'Outfit', sans-serif; font-size: 13px; color: var(--navy); opacity: .75; margin-bottom: 16px; }
+.tm-bio { font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 300; color: var(--ink3); line-height: 1.7; }
+
+/* ══ APPROACH — dark ══ */
+.approach-band { background: #111318; }
+.ab-inner { max-width: 1320px; margin: 0 auto; padding: 96px 64px; display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: start; }
+.dk-tag { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: rgba(240,238,232,.38); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
+.dk-tag::before { content: ''; width: 24px; height: 1px; background: rgba(240,238,232,.25); }
+.dk-h { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 48px); font-weight: 300; line-height: 1.1; letter-spacing: -.5px; color: #f0ece4; margin-bottom: 20px; }
+.dk-h em { font-style: italic; color: rgba(240,236,228,.55); }
+.dk-body { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 300; color: rgba(240,238,232,.42); line-height: 1.8; margin-bottom: 32px; }
+.btn-dark { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(240,238,232,.7); background: transparent; border: 1px solid rgba(240,238,232,.18); border-radius: 2px; padding: 13px 28px; transition: all .3s; text-decoration: none; display: inline-block; }
+.btn-dark:hover { border-color: rgba(240,238,232,.38); color: #f0ece4; }
+.steps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,.06); }
+.step-card { background: #111318; padding: 40px 32px; position: relative; transition: background .3s; overflow: hidden; }
+.step-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: rgba(255,255,255,.06); }
+.step-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: rgba(240,238,232,.35); transform: scaleX(0); transform-origin: left; transition: transform .45s; }
+.step-card:hover { background: #161a22; }
+.step-card:hover::after { transform: scaleX(1); }
+.step-n { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; color: rgba(240,238,232,.22); margin-bottom: 16px; }
+.step-t { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: #f0ece4; margin-bottom: 10px; transition: opacity .3s; }
+.step-card:hover .step-t { opacity: .8; }
+.step-d { font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 300; color: rgba(240,238,232,.35); line-height: 1.7; }
+
+/* ══ REG BAR ══ */
+.reg-bar { background: var(--white); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 32px 64px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.rb-items { display: flex; flex-wrap: wrap; }
+.rb-item { padding: 0 28px; border-right: 1px solid var(--rule); display: flex; flex-direction: column; gap: 3px; }
+.rb-item:first-child { padding-left: 0; }
+.rb-item:last-child { border-right: none; }
+.rb-l { font-family: 'DM Mono', monospace; font-size: 8.5px; letter-spacing: 2px; text-transform: uppercase; color: #bbb; }
+.rb-v { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 500; color: var(--ink); }
+.rb-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.rb-pill { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--ink3); border: 1px solid var(--rule); border-radius: 40px; padding: 6px 14px; }
+
+/* ══ CTA ══ */
+.cta-section { background: #111318; padding: 96px 64px; border-top: 1px solid rgba(255,255,255,.05); }
+.cta-inner { max-width: 1320px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap; }
+.cta-right { display: flex; flex-direction: column; gap: 18px; align-items: flex-start; min-width: 280px; }
+.cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.cta-note { font-family: 'DM Mono', monospace; font-size: 9.5px; letter-spacing: 1.5px; color: rgba(240,238,232,.3); line-height: 1.85; }
+
+/* ══ REVEAL ══ */
+.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.rv.in { opacity: 1; transform: none; }
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:1100px){
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .stats-bar .sbar:nth-child(2){border-right:none}
+  .ls-inner{padding:72px 28px}
+  .ab-inner{grid-template-columns:1fr;gap:48px;padding:72px 28px}
+  .about-section{grid-template-columns:1fr}
+  .about-photo{height:320px}
+  .about-copy{padding:64px 28px}
+  .srv-grid,.team-grid,.steps-grid{grid-template-columns:repeat(2,1fr)}
+  .cta-section{padding:72px 28px}
+  .cta-inner{flex-direction:column;gap:36px}
+  .reg-bar{padding:28px 28px}
+  .photo-strip-txt{left:28px}.photo-year{right:28px}
+  .hero{padding:140px 28px 96px}
+}
+@media(max-width:640px){
+  .stats-bar{grid-template-columns:1fr 1fr}
+  .sbar{padding:28px 18px;border-right:none;border-bottom:1px solid var(--rule)}
+  .stats-bar .sbar:nth-child(odd){border-right:1px solid var(--rule)}
+  .ls-inner,.about-copy{padding:56px 20px}
+  .srv-grid,.team-grid,.steps-grid{grid-template-columns:1fr}
+  .ab-inner,.cta-section,.reg-bar{padding-left:20px;padding-right:20px}
+  .photo-year{display:none}
+  .photo-strip-txt{left:20px}
+  .hero{padding:120px 20px 80px}
+}
+
+/* ══ PRESS MARQUEE ══ */
+.press-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  overflow: hidden;
+}
+.press-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ink3);
+  white-space: nowrap;
+  padding: 0 32px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--rule);
+}
+.press-track-wrap { overflow: hidden; flex: 1; }
+.press-track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.press-item {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--ink);
+  opacity: 0.45;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  transition: opacity .2s;
+}
+.press-item:hover { opacity: 0.8; }
+.press-sep {
+  color: var(--rule);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ══ FEATURES ══ */
+.features-section {
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+.feat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+  border-bottom: 1px solid var(--rule);
+}
+.feat:last-child { border-bottom: none; }
+.feat-img-right .feat-text  { order: 1; }
+.feat-img-right .feat-visual { order: 2; }
+.feat-img-left  .feat-visual { order: 1; }
+.feat-img-left  .feat-text  { order: 2; }
+
+.feat-text {
+  padding: 88px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  border-right: 1px solid var(--rule);
+}
+.feat-img-left .feat-text { border-right: none; border-left: 1px solid var(--rule); }
+
+.feat-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.65;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feat-tag::before {
+  content: '';
+  width: 22px; height: 1px;
+  background: var(--navy);
+  opacity: 0.4;
+}
+.feat-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 3.2vw, 46px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -.4px;
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+.feat-h em { font-style: italic; color: var(--navy); }
+.feat-body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14.5px;
+  font-weight: 300;
+  color: var(--ink2);
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+.feat-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.feat-list li {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
+  color: var(--ink2);
+  padding-left: 20px;
+  position: relative;
+}
+.feat-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--navy);
+  opacity: 0.5;
+}
+
+.feat-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 56px;
+  background: #f5f4f1;
+}
+
+/* Card stack visual */
+.feat-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 320px;
+}
+.f-card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 20px 24px;
+  transition: transform .2s, box-shadow .2s;
+}
+.f-card:hover { transform: translateX(6px); box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+.f-card-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+.f-card-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.f-card-2 .f-card-val { color: var(--navy); }
+.f-card-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--ink3);
+}
+
+/* Chart mock visual */
+.feat-chart-mock {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 28px 28px 20px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.06);
+}
+.fcm-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 24px;
+}
+.fcm-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 120px;
+}
+.fcm-bar {
+  flex: 1;
+  background: #e8edf2;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: background .2s;
+  cursor: default;
+}
+.fcm-bar:hover { background: #d0dae4; }
+.fcm-bar-hi { background: var(--navy) !important; opacity: 0.75; }
+.fcm-bar-hi:hover { opacity: 1; }
+.fcm-bar span {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--ink3);
+  margin-bottom: -18px;
+}
+.fcm-bar-hi span { color: rgba(255,255,255,.7); }
+.fcm-footer {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* Timeline visual */
+.feat-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+.feat-timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px; top: 12px; bottom: 12px;
+  width: 1px;
+  background: var(--rule);
+}
+.ftl-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 16px 0;
+  position: relative;
+}
+.ftl-dot {
+  width: 23px; height: 23px;
+  border-radius: 50%;
+  border: 1.5px solid var(--rule);
+  background: #f5f4f1;
+  flex-shrink: 0;
+  transition: all .2s;
+  position: relative;
+  z-index: 1;
+}
+.ftl-active .ftl-dot {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+.ftl-content {}
+.ftl-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.ftl-active .ftl-label { color: var(--navy); }
+.ftl-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--ink3);
+}
+
+/* ══ TESTIMONIALS ══ */
+.testi-section {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+}
+.testi-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 96px 64px;
+}
+.testi-head {
+  margin-bottom: 56px;
+}
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.testi-card {
+  background: #f7f5f2;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 40px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: box-shadow .25s, transform .25s;
+  position: relative;
+}
+.testi-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.07);
+  transform: translateY(-2px);
+}
+.testi-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 72px;
+  font-weight: 300;
+  color: var(--navy);
+  opacity: 0.15;
+  line-height: 0.6;
+  margin-bottom: 24px;
+  user-select: none;
+}
+.testi-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--ink2);
+  line-height: 1.85;
+  flex: 1;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+.testi-author {
+  border-top: 1px solid var(--rule2);
+  padding-top: 18px;
+}
+.testi-name {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.testi-meta {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--ink3);
+}
+
+/* ══ RESPONSIVE for new sections ══ */
+@media (max-width: 1100px) {
+  .feat { grid-template-columns: 1fr; min-height: auto; }
+  .feat-img-right .feat-text,
+  .feat-img-right .feat-visual,
+  .feat-img-left .feat-text,
+  .feat-img-left .feat-visual { order: unset; border: none; }
+  .feat-text { padding: 56px 40px; border-bottom: 1px solid var(--rule); }
+  .feat-visual { padding: 48px 40px; }
+  .testi-inner { padding: 72px 40px; }
+  .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 640px) {
+  .feat-text { padding: 48px 20px; }
+  .feat-visual { padding: 36px 20px; }
+  .testi-inner { padding: 56px 20px; }
+  .press-label { padding: 0 20px; }
+}
+
+
+
+/* ═══════════════════════════════════════════
+   SERVICE CARDS — expand reveal effect
+═══════════════════════════════════════════ */
+.srv-card {
+  background: var(--white);
+  padding: 40px 32px 52px;
+  position: relative;
+  overflow: hidden;
+  transition: background .35s, box-shadow .35s;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Big ghost number behind */
+.sc-bg-num {
+  position: absolute;
+  bottom: -10px; right: 12px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 120px;
+  font-weight: 300;
+  color: var(--navy);
+  opacity: 0;
+  line-height: 1;
+  transition: opacity .4s ease, transform .4s ease;
+  transform: translateY(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.srv-card:hover .sc-bg-num {
+  opacity: 0.06;
+  transform: translateY(0);
+}
+
+/* Animated top border */
+.srv-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--navy), #4e8bcd);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s cubic-bezier(.16,1,.3,1);
+}
+.srv-card:hover::before { transform: scaleX(1); }
+
+/* Left accent bar */
+.srv-card::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 0;
+  background: linear-gradient(180deg, rgba(26,46,82,.04), transparent);
+  transition: width .4s ease;
+}
+.srv-card:hover::after { width: 100%; }
+
+.srv-card:hover { background: #faf9f6; box-shadow: 0 12px 40px rgba(13,17,23,.08); }
+
+.sc-num {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  color: rgba(13,17,23,.28);
+  margin-bottom: 28px;
+  transition: color .3s;
+}
+.srv-card:hover .sc-num { color: var(--navy); }
+
+.sc-t {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 400;
+  color: var(--ink); margin-bottom: 12px;
+  line-height: 1.2;
+  transition: color .3s, transform .3s;
+}
+.srv-card:hover .sc-t { color: var(--navy); transform: translateY(-2px); }
+
+.sc-d {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 300;
+  color: rgba(13,17,23,.52); line-height: 1.72;
+  transition: color .3s;
+}
+.srv-card:hover .sc-d { color: rgba(13,17,23,.7); }
+
+.sc-arr {
+  position: absolute;
+  bottom: 22px; right: 24px;
+  color: var(--navy);
+  opacity: 0;
+  transform: translate(-6px, 6px) rotate(0deg);
+  transition: all .35s cubic-bezier(.16,1,.3,1);
+}
+.srv-card:hover .sc-arr {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ═══════════════════════════════════════════
+   TEAM CARDS — 3D flip effect
+═══════════════════════════════════════════ */
+.tm-card {
+  perspective: 1200px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  height: 380px;
+  cursor: pointer;
+  overflow: visible;
+}
+.tm-card:hover { box-shadow: none; transform: none; }
+
+.tm-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .75s cubic-bezier(.16,1,.3,1);
+}
+.tm-card:hover .tm-inner {
+  transform: rotateY(180deg);
+}
+
+.tm-front, .tm-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 2px;
+  padding: 32px 28px;
+  overflow: hidden;
+}
+
+.tm-front {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  display: flex; flex-direction: column; gap: 0;
+}
+.tm-front::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--navy), transparent);
+  border-radius: 2px 2px 0 0;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.tm-card:hover .tm-front::before { opacity: 1; }
+
+.tm-hover-hint {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  color: rgba(13,17,23,.2);
+  margin-top: auto; padding-top: 20px;
+  text-transform: uppercase;
+  transition: color .3s;
+}
+.tm-card:hover .tm-hover-hint { color: var(--navy); opacity: .5; }
+
+.tm-back {
+  background: var(--navy);
+  transform: rotateY(180deg);
+  display: flex; flex-direction: column; justify-content: center;
+  gap: 0;
+}
+.tm-back-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px; font-weight: 300;
+  color: #eef0f5; margin-bottom: 6px; line-height: 1.1;
+}
+.tm-back-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(238,240,245,.45); margin-bottom: 20px;
+}
+.tm-back-divider {
+  width: 32px; height: 1px;
+  background: rgba(238,240,245,.2);
+  margin-bottom: 20px;
+}
+.tm-back-bio {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 300;
+  color: rgba(238,240,245,.55); line-height: 1.75;
+  margin-bottom: 28px;
+}
+.tm-back-cta {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #eef0f5; text-decoration: none;
+  border: 1px solid rgba(238,240,245,.25);
+  border-radius: 2px; padding: 10px 18px;
+  display: inline-block; align-self: flex-start;
+  transition: all .25s;
+}
+.tm-back-cta:hover {
+  background: rgba(238,240,245,.1);
+  border-color: rgba(238,240,245,.5);
+}
+
+/* ═══════════════════════════════════════════
+   TESTIMONIAL CARDS — slide reveal effect
+═══════════════════════════════════════════ */
+.testi-card {
+  background: #f7f5f2;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 40px 36px 36px;
+  display: flex; flex-direction: column; gap: 0;
+  transition: box-shadow .35s, transform .35s, background .35s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background sweep */
+.testi-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26,46,82,.04) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity .4s;
+}
+.testi-card:hover::before { opacity: 1; }
+
+/* Left accent */
+.testi-card::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--navy), transparent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .5s cubic-bezier(.16,1,.3,1);
+}
+.testi-card:hover::after { transform: scaleY(1); }
+
+.testi-card:hover {
+  box-shadow: 0 16px 48px rgba(13,17,23,.1);
+  transform: translateY(-4px);
+  background: #f5f3f0;
+}
+
+.testi-quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px; font-weight: 300;
+  color: var(--navy); opacity: 0.2;
+  line-height: 0.6; margin-bottom: 20px;
+  transition: opacity .3s;
+}
+.testi-card:hover .testi-quote-mark { opacity: 0.4; }
+
+.testi-stars {
+  font-size: 12px;
+  color: #c9a84c;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .4s .1s, transform .4s .1s;
+}
+.testi-card:hover .testi-stars { opacity: 1; transform: translateY(0); }
+
+.testi-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px; font-weight: 300;
+  color: var(--ink2); line-height: 1.85;
+  flex: 1; margin-bottom: 28px;
+  font-style: italic;
+  transition: color .3s;
+}
+.testi-card:hover .testi-text { color: var(--ink); }
+
+.testi-reveal {
+  margin-bottom: 20px;
+  overflow: hidden; height: 1px;
+}
+.testi-reveal-line {
+  height: 1px;
+  background: linear-gradient(90deg, var(--navy), transparent);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .6s cubic-bezier(.16,1,.3,1);
+}
+.testi-card:hover .testi-reveal-line { transform: scaleX(1); }
+
+.testi-author {
+  display: flex; align-items: center; gap: 14px;
+  padding-top: 16px; border-top: 1px solid var(--rule2);
+}
+.testi-avatar {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--navy); opacity: .15;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Mono', monospace; font-size: 11px;
+  color: var(--navy); flex-shrink: 0;
+  transition: opacity .3s;
+}
+.testi-card:hover .testi-avatar { opacity: 0.9; color: #fff; }
+.testi-name {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--ink); margin-bottom: 3px;
+}
+.testi-meta {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px; font-weight: 300; color: var(--ink3);
+}
+
+/* ═══════════════════════════════════════════
+   STAT BARS — counter animation
+═══════════════════════════════════════════ */
+.sbar-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px,3.5vw,54px);
+  font-weight: 300; color: var(--ink);
+  line-height: 1; margin-bottom: 8px;
+  transition: color .3s;
+  display: block;
+}
+.sbar { transition: background .3s, transform .3s; }
+.sbar:hover { background: #faf9f6; transform: translateY(-2px); }
+.sbar:hover .sbar-num { color: var(--navy); }
+
+/* ═══════════════════════════════════════════
+   FEATURE CARDS — stagger slide
+═══════════════════════════════════════════ */
+.f-card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 22px 24px;
+  transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s, border-color .35s;
+  position: relative;
+  overflow: hidden;
+}
+.f-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--navy);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+.f-card:hover {
+  transform: translateX(8px);
+  box-shadow: -6px 6px 24px rgba(13,17,23,.06);
+  border-color: rgba(13,17,23,.14);
+}
+.f-card:hover::before { transform: scaleY(1); }
+
+/* ═══════════════════════════════════════════
+   CURSOR GLOW — follows mouse on dark sections
+═══════════════════════════════════════════ */
+.cursor-glow {
+  position: fixed;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,46,82,.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s;
+  opacity: 0;
+}
+
+
+/* Nav scroll state */
+#nav.scrolled {
+  box-shadow: 0 2px 24px rgba(14,18,30,.1);
+  border-bottom-color: rgba(14,18,30,.12);
+}
+
+
+/* ══ PLATFORM SECTION ══ */
+.platform-section {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+}
+.platform-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 96px 64px;
+}
+
+.platform-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 72px;
+}
+.platform-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--navy); opacity: .6;
+  margin-bottom: 18px;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.platform-tag::before, .platform-tag::after {
+  content: ''; width: 24px; height: 1px;
+  background: var(--navy); opacity: .3;
+}
+.platform-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 300; line-height: 1.1; letter-spacing: -.5px;
+  color: var(--ink); margin-bottom: 18px;
+}
+.platform-h em { font-style: italic; color: var(--navy); }
+.platform-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px; font-weight: 300;
+  color: var(--ink2); line-height: 1.8;
+}
+
+/* Cards */
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+.platform-card {
+  background: var(--white);
+  padding: 48px 40px 44px;
+  display: flex; flex-direction: column; gap: 0;
+  position: relative; overflow: hidden;
+  transition: background .3s;
+}
+.platform-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--navy), transparent);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .5s cubic-bezier(.16,1,.3,1);
+}
+.platform-card:hover { background: #f7f6f3; }
+.platform-card:hover::before { transform: scaleX(1); }
+
+.platform-card-accent {
+  background: #f0f3f8;
+}
+.platform-card-accent::before {
+  background: linear-gradient(90deg, var(--navy), #4e8bcd);
+  transform: scaleX(1);
+}
+.platform-card-accent:hover { background: #e8edf5; }
+
+.pc-icon {
+  color: var(--navy); opacity: .5;
+  margin-bottom: 20px;
+  transition: opacity .3s;
+}
+.platform-card:hover .pc-icon { opacity: .9; }
+.platform-card-accent .pc-icon { opacity: .8; }
+
+.pc-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  color: rgba(13,17,23,.25);
+  margin-bottom: 14px;
+}
+.platform-card-accent .pc-num { color: rgba(26,46,82,.4); }
+
+.pc-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px; font-weight: 400;
+  color: var(--ink); line-height: 1.15;
+  margin-bottom: 14px;
+  transition: color .3s;
+}
+.platform-card:hover .pc-title { color: var(--navy); }
+.platform-card-accent .pc-title { color: var(--navy); }
+
+.pc-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px; font-weight: 300;
+  color: var(--ink2); line-height: 1.78;
+  margin-bottom: 20px; flex: 1;
+}
+
+.pc-list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 7px;
+  margin-bottom: 28px;
+}
+.pc-list li {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12.5px; font-weight: 300;
+  color: var(--ink3);
+  padding-left: 16px; position: relative;
+}
+.pc-list li::before {
+  content: '–';
+  position: absolute; left: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px; color: var(--navy); opacity: .4;
+}
+
+.pc-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--navy); text-decoration: none;
+  align-self: flex-start;
+  transition: letter-spacing .25s, opacity .25s;
+  opacity: .6;
+}
+.pc-link:hover { letter-spacing: 3px; opacity: 1; }
+
+/* Bottom stats */
+.platform-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.pb-stat {
+  flex: 1; text-align: center;
+  padding: 28px 20px;
+  transition: background .25s;
+}
+.pb-stat:hover { background: #f7f6f3; }
+.pb-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 300; color: var(--navy);
+  line-height: 1; margin-bottom: 6px;
+}
+.pb-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--ink3);
+}
+.pb-divider {
+  width: 1px; height: 60px;
+  background: var(--rule); flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .platform-inner { padding: 72px 40px; }
+  .platform-grid { grid-template-columns: 1fr; }
+  .platform-card { padding: 40px 32px; }
+  .platform-bottom { flex-wrap: wrap; }
+  .pb-stat { min-width: 50%; border-bottom: 1px solid var(--rule); }
+  .pb-divider { display: none; }
+}
+@media (max-width: 640px) {
+  .platform-inner { padding: 56px 20px; }
+  .platform-card { padding: 36px 24px; }
+  .pb-stat { min-width: 50%; padding: 20px 12px; }
+}
+
+</style>
+
+<script is:inline>
+/* ── Scroll reveal ── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+/* ── Service card chip filter ── */
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
+    chip.classList.add('on');
+    const key = chip.dataset.key;
+    document.querySelectorAll('.srv-card').forEach(card => {
+      card.hidden = key !== 'all' && card.dataset.key !== key;
+    });
+  });
+});
+
+/* ── Stat counter animation ── */
+const countIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const raw = el.textContent.trim();
+    const match = raw.match(/^(\D*)(\d+\.?\d*)(\D*)$/);
+    if (!match) return;
+    const [, pre, num, post] = match;
+    const target = parseFloat(num);
+    const isDecimal = num.includes('.');
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now) {
+      const t = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - t, 4);
+      const val = ease * target;
+      el.textContent = pre + (isDecimal ? val.toFixed(1) : Math.floor(val)) + post;
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+    countIO.unobserve(el);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.sbar-num').forEach(el => countIO.observe(el));
+
+/* ── Cursor glow on dark sections ── */
+const glow = document.createElement('div');
+glow.className = 'cursor-glow';
+document.body.appendChild(glow);
+let glowVisible = false;
+
+document.addEventListener('mousemove', e => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top  = e.clientY + 'px';
+  const el = document.elementFromPoint(e.clientX, e.clientY);
+  const inDark = el?.closest('.approach-band, .cta-section, section[style*="bg2"]');
+  if (inDark && !glowVisible) { glow.style.opacity = '1'; glowVisible = true; }
+  else if (!inDark && glowVisible) { glow.style.opacity = '0'; glowVisible = false; }
+});
+
+/* ── Service card magnetic hover ── */
+document.querySelectorAll('.srv-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width  - 0.5) * 8;
+    const y = ((e.clientY - r.top)  / r.height - 0.5) * 8;
+    card.style.transform = `perspective(600px) rotateX(${-y}deg) rotateY(${x}deg) translateY(-3px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+/* ── Testimonial card parallax text ── */
+document.querySelectorAll('.testi-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width  - 0.5;
+    const y = (e.clientY - r.top)  / r.height - 0.5;
+    const txt = card.querySelector('.testi-text');
+    if (txt) txt.style.transform = `translate(${x * 4}px, ${y * 4}px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    const txt = card.querySelector('.testi-text');
+    if (txt) txt.style.transform = '';
+  });
+});
+
+/* ── Navbar scroll effect ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav?.classList.toggle('scrolled', scrollY > 40);
+}, { passive: true });
+</script>

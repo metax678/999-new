@@ -1,0 +1,747 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Contact — RADIANX CAPITAL"
+  description="Schedule a consultation with RADIANX CAPITAL. New York office: 529 5th Ave Suite 1475, (646) 403-3807."
+  currentPath="/contact"
+>
+
+
+
+<!-- HERO — SPLIT -->
+<section class="hero">
+
+  <!-- LEFT: heading + direct contacts -->
+  <div class="hero-l">
+    <div class="hero-l-geo">
+      <svg viewBox="0 0 720 900" preserveAspectRatio="xMidYMid slice" fill="none">
+        <g transform="translate(640,500)">
+          <g class="rot">
+            <circle cx="0" cy="0" r="280" stroke="rgba(240,238,235,.02)" stroke-width="1" fill="none"/>
+            <path d="M0,-280 A280,280 0 0,1 198,198" stroke="rgba(240,238,235,.045)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </g>
+          <g class="rotr">
+            <circle cx="0" cy="0" r="340" stroke="rgba(240,238,235,.012)" stroke-width="1" fill="none" stroke-dasharray="3,8"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-l-inner">
+      <div class="sec-tag rv">Get in Touch</div>
+      <h1 class="hero-h rv">
+        Let's begin<br>the <em>conversation.</em>
+      </h1>
+      <p class="hero-desc rv">
+        Every client relationship at RADIANX CAPITAL begins with a straightforward conversation. We will listen carefully, assess your situation honestly, and tell you directly whether — and how — we can add meaningful value to your financial life.
+      </p>
+    </div>
+
+    <div class="direct-items rv">
+      <a href="tel:6464033807" class="di">
+        <div class="di-left">
+          <span class="di-label">Direct Line</span>
+          <span class="di-value">(646) 403-3807</span>
+        </div>
+        <span class="di-arrow">→</span>
+      </a>
+      <a href="mailto:invest@radianx.io" class="di">
+        <div class="di-left">
+          <span class="di-label">Email</span>
+          <span class="di-value">invest@radianx.io</span>
+        </div>
+        <span class="di-arrow">→</span>
+      </a>
+      <a href="https://maps.google.com/?q=529+5th+Avenue+New+York+NY+10017" target="_blank" rel="noopener" class="di">
+        <div class="di-left">
+          <span class="di-label">Office</span>
+          <span class="di-value">529 5th Ave, Suite 1475</span>
+          <span style="font-family:var(--sans);font-size:13px;font-weight:300;color:var(--white3);margin-top:2px">New York, NY 10017</span>
+        </div>
+        <span class="di-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- RIGHT: form -->
+  <div class="hero-r">
+    <div class="form-head rv">
+      <div class="form-title">Schedule a <em>consultation</em></div>
+      <p class="form-sub">Complete the form below and a member of our team will respond within one business day. All enquiries are treated with complete confidentiality.</p>
+    </div>
+
+    <form class="form rv" id="contactForm" novalidate>
+      <div class="f-row">
+        <div class="f-field">
+          <label class="f-label" for="firstName">First Name</label>
+          <input class="f-input" id="firstName" name="firstName" type="text" placeholder="James" required>
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="lastName">Last Name</label>
+          <input class="f-input" id="lastName" name="lastName" type="text" placeholder="Morrison" required>
+        </div>
+      </div>
+      <div class="f-row full">
+        <div class="f-field">
+          <label class="f-label" for="email">Email Address</label>
+          <input class="f-input" id="email" name="email" type="email" placeholder="james@example.com" required>
+        </div>
+      </div>
+      <div class="f-row full">
+        <div class="f-field">
+          <label class="f-label" for="phone">Phone Number</label>
+          <input class="f-input" id="phone" name="phone" type="tel" placeholder="+1 (212) 000-0000">
+        </div>
+      </div>
+      <div class="f-row full">
+        <div class="f-field">
+          <label class="f-label" for="service">Area of Interest</label>
+          <select class="f-input" id="service" name="service">
+            <option value="" disabled selected>Select a service</option>
+            <option>Investment Management</option>
+            <option>Financial Planning</option>
+            <option>Tax Optimization</option>
+            <option>Trust &amp; Estate Planning</option>
+            <option>Retirement Planning</option>
+            <option>Alternative Investments</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+      </div>
+      <div class="f-row full">
+        <div class="f-field">
+          <label class="f-label" for="assets">Approximate Investable Assets</label>
+          <select class="f-input" id="assets" name="assets">
+            <option value="" disabled selected>Select a range</option>
+            <option>$500K – $1M</option>
+            <option>$1M – $5M</option>
+            <option>$5M – $25M</option>
+            <option>$25M+</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+      </div>
+      <div class="f-row full">
+        <div class="f-field">
+          <label class="f-label" for="message">Message <span style="opacity:.45">(Optional)</span></label>
+          <textarea class="f-textarea" id="message" name="message" placeholder="Tell us a little about your situation or what you'd like to discuss…"></textarea>
+        </div>
+      </div>
+
+      <div class="f-consent rv">
+        <input type="checkbox" class="f-checkbox" id="consent" required>
+        <label for="consent">I understand that RADIANX CAPITAL, LLC is an SEC-registered investment adviser and that this inquiry does not constitute a client relationship. My information will be used solely to respond to this enquiry.</label>
+      </div>
+
+      <div class="f-submit rv">
+        <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+        <p class="f-note">We respond within one business day</p>
+      </div>
+    </form>
+
+    <!-- Success -->
+    <div class="f-success" id="formSuccess">
+      <div class="success-icon">
+        <svg viewBox="0 0 20 20" fill="none">
+          <path d="M4 10l4 4 8-8" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="success-t">Message received.</div>
+      <p class="success-d">Thank you for reaching out. A member of our team will be in touch within one business day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="is rv">
+    <div class="is-label">Office Hours</div>
+    <div class="is-value">Monday — Friday</div>
+    <div class="is-sub">9:00 AM – 6:00 PM EST<br>Appointments available outside of standard hours</div>
+  </div>
+  <div class="is rv d1">
+    <div class="is-label">Response Time</div>
+    <div class="is-value">Within 1 Business Day</div>
+    <div class="is-sub">All enquiries handled with complete confidentiality</div>
+  </div>
+  <div class="is rv d2">
+    <div class="is-label">Initial Consultation</div>
+    <div class="is-value">Complimentary</div>
+    <div class="is-sub">No obligation. Available for qualified prospective clients.</div>
+  </div>
+  <div class="is rv d3">
+    <div class="is-label">Registration</div>
+    <div class="is-value">SEC Registered</div>
+    <div class="is-sub">CRD# 298178 · No. 801-117100<br>New York, NY</div>
+  </div>
+</div>
+
+<!-- OFFICE -->
+<section class="office">
+  <!-- Geometric map illustration -->
+  <div class="office-map">
+    <svg viewBox="0 0 720 480" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="720" height="480" fill="#0f0f12"/>
+      <!-- Grid lines — street grid abstraction -->
+      <g stroke="rgba(240,238,235,.06)" stroke-width="1">
+        <!-- Horizontals -->
+        <line x1="0" y1="80"  x2="720" y2="80"/>
+        <line x1="0" y1="140" x2="720" y2="140"/>
+        <line x1="0" y1="200" x2="720" y2="200"/>
+        <line x1="0" y1="260" x2="720" y2="260"/>
+        <line x1="0" y1="320" x2="720" y2="320"/>
+        <line x1="0" y1="380" x2="720" y2="380"/>
+        <line x1="0" y1="440" x2="720" y2="440"/>
+        <!-- Verticals -->
+        <line x1="80"  y1="0" x2="80"  y2="480"/>
+        <line x1="160" y1="0" x2="160" y2="480"/>
+        <line x1="240" y1="0" x2="240" y2="480"/>
+        <line x1="320" y1="0" x2="320" y2="480"/>
+        <line x1="400" y1="0" x2="400" y2="480"/>
+        <line x1="480" y1="0" x2="480" y2="480"/>
+        <line x1="560" y1="0" x2="560" y2="480"/>
+        <line x1="640" y1="0" x2="640" y2="480"/>
+      </g>
+      <!-- City blocks -->
+      <g fill="rgba(240,238,235,.03)" stroke="rgba(240,238,235,.05)" stroke-width=".5">
+        <rect x="82" y="82" width="76" height="56"/>
+        <rect x="82" y="142" width="76" height="56"/>
+        <rect x="82" y="202" width="76" height="56"/>
+        <rect x="162" y="82" width="76" height="56"/>
+        <rect x="162" y="142" width="76" height="116"/>
+        <rect x="242" y="82" width="76" height="56"/>
+        <rect x="242" y="202" width="76" height="56"/>
+        <rect x="322" y="142" width="76" height="56"/>
+        <rect x="322" y="202" width="76" height="116"/>
+        <rect x="402" y="82" width="76" height="116"/>
+        <rect x="402" y="202" width="76" height="56"/>
+        <rect x="482" y="142" width="76" height="56"/>
+        <rect x="482" y="202" width="76" height="56"/>
+        <rect x="562" y="82" width="76" height="116"/>
+        <rect x="562" y="202" width="76" height="116"/>
+        <rect x="82" y="322" width="76" height="56"/>
+        <rect x="162" y="322" width="76" height="56"/>
+        <rect x="242" y="322" width="76" height="56"/>
+        <rect x="322" y="322" width="76" height="56"/>
+        <rect x="402" y="322" width="76" height="56"/>
+        <rect x="482" y="322" width="76" height="56"/>
+        <rect x="562" y="322" width="76" height="56"/>
+      </g>
+      <!-- 5th Ave highlight -->
+      <rect x="318" y="0" width="4" height="480" fill="rgba(122,150,168,.15)"/>
+      <!-- Pin location — 529 5th Ave -->
+      <g transform="translate(320,200)">
+        <!-- Pulse rings -->
+        <circle cx="0" cy="0" r="30" stroke="rgba(122,150,168,.12)" stroke-width="1" fill="none">
+          <animate attributeName="r" values="20;45;20" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values=".3;0;.3" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="16" stroke="rgba(122,150,168,.2)" stroke-width="1" fill="none"/>
+        <!-- Pin -->
+        <circle cx="0" cy="0" r="5" fill="rgba(122,150,168,.9)"/>
+        <circle cx="0" cy="0" r="2.5" fill="var(--bg)"/>
+        <!-- Label -->
+        <rect x="10" y="-18" width="120" height="22" rx="1" fill="rgba(15,15,18,.9)" stroke="rgba(122,150,168,.25)" stroke-width="1"/>
+        <text x="18" y="-4" fill="rgba(240,238,235,.7)" font-size="9" font-family="'DM Mono',monospace" letter-spacing="1">529 5TH AVENUE</text>
+      </g>
+      <!-- Street labels -->
+      <text x="288" y="20" fill="rgba(240,238,235,.2)" font-size="8" font-family="'DM Mono',monospace" letter-spacing="1.5">5TH AVE</text>
+      <text x="288" y="468" fill="rgba(240,238,235,.2)" font-size="8" font-family="'DM Mono',monospace" letter-spacing="1.5">5TH AVE</text>
+      <text x="20" y="145" fill="rgba(240,238,235,.15)" font-size="7" font-family="'DM Mono',monospace" transform="rotate(-90,20,145)">42ND ST</text>
+      <text x="20" y="265" fill="rgba(240,238,235,.15)" font-size="7" font-family="'DM Mono',monospace" transform="rotate(-90,20,265)">40TH ST</text>
+      <!-- Compass -->
+      <g transform="translate(666,430)">
+        <circle cx="0" cy="0" r="18" stroke="rgba(240,238,235,.1)" stroke-width="1" fill="none"/>
+        <line x1="0" y1="-12" x2="0" y2="-6" stroke="rgba(240,238,235,.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="0" y1="6" x2="0" y2="12" stroke="rgba(240,238,235,.2)" stroke-width="1" stroke-linecap="round"/>
+        <line x1="-12" y1="0" x2="-6" y2="0" stroke="rgba(240,238,235,.2)" stroke-width="1" stroke-linecap="round"/>
+        <line x1="6" y1="0" x2="12" y2="0" stroke="rgba(240,238,235,.2)" stroke-width="1" stroke-linecap="round"/>
+        <text x="-2" y="-16" fill="rgba(240,238,235,.4)" font-size="7" font-family="'DM Mono',monospace">N</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="office-info">
+    <div class="oi-tag rv">Our Office</div>
+    <h2 class="oi-h rv">Midtown<br><em>Manhattan</em></h2>
+    <div class="oi-rows rv">
+      <div class="oi-row">
+        <div class="oi-rl">Address</div>
+        <div class="oi-rv">529 5th Avenue, Suite 1475<br>New York, NY 10017</div>
+      </div>
+      <div class="oi-row">
+        <div class="oi-rl">Building</div>
+        <div class="oi-rv">529 Fifth Avenue<br>Between 44th &amp; 45th Streets</div>
+      </div>
+      <div class="oi-row">
+        <div class="oi-rl">Subway</div>
+        <div class="oi-rv">4, 5, 6 at Grand Central · B, D, F, M at 42nd St · 7 at 5th Ave</div>
+      </div>
+      <div class="oi-row">
+        <div class="oi-rl">Phone</div>
+        <div class="oi-rv"><a href="tel:6464033807">(646) 403-3807</a></div>
+      </div>
+      <div class="oi-row">
+        <div class="oi-rl">Hours</div>
+        <div class="oi-rv">Mon – Fri &nbsp; 9:00 AM – 6:00 PM EST</div>
+      </div>
+    </div>
+    <a href="https://maps.google.com/?q=529+5th+Avenue+New+York+NY+10017" target="_blank" rel="noopener" class="oi-directions rv">
+      Get Directions
+    </a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-l">
+    <div class="sec-tag rv">Common Questions</div>
+    <h2 class="faq-lh rv">Before we<br><em>speak</em></h2>
+    <p class="faq-lb rv">Answers to the questions most prospective clients ask before reaching out.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item open">
+      <button class="faq-q" onclick="toggle(this)">
+        Is the initial consultation really complimentary?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">Yes, entirely. We offer a no-obligation initial consultation to all qualified prospective clients. Our goal in that conversation is to understand your situation fully and tell you honestly whether we are the right fit — not to sell you on our services.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggle(this)">
+        What is the minimum investable asset level?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">We typically work with clients who have investable assets of $500,000 or more. However, we evaluate each situation individually. If your circumstances are compelling and there is a clear path to a meaningful long-term relationship, we are willing to discuss options regardless of current asset levels.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggle(this)">
+        How are your fees structured?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">RADIANX CAPITAL charges fees based on assets under management. We do not receive commissions, referral fees, or compensation from any third party. Our complete fee schedule is disclosed in our Form ADV, available upon request. We believe fee transparency is the foundation of a trustworthy advisory relationship.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggle(this)">
+        What does it mean to be SEC registered?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">SEC registration means RADIANX CAPITAL is registered as an investment adviser with the U.S. Securities and Exchange Commission under the Investment Advisers Act of 1940. This subjects us to ongoing regulatory oversight, disclosure requirements, and — most importantly — a legal fiduciary duty to act in the best interest of our clients at all times.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggle(this)">
+        How quickly will you respond to my enquiry?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">We respond to all enquiries within one business day. For urgent matters, please call us directly at (646) 403-3807. We treat every enquiry with complete confidentiality.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggle(this)">
+        Do you work with clients outside of New York?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">Yes. While our office is based in New York, we serve clients across the United States. We are registered in all required states and are fully equipped to manage client relationships remotely through secure digital channels and regular communication.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+</div>
+
+</Layout>
+
+<style is:global>
+
+/* ═══ HERO — SPLIT LAYOUT ═══ */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--brd);
+}
+
+/* Left — copy */
+.hero-l{
+  padding:200px 64px 80px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  border-right:1px solid var(--brd);
+  position:relative;overflow:hidden;
+}
+.hero-l-geo{position:absolute;inset:0;pointer-events:none;z-index:0}
+.hero-l-geo svg{width:100%;height:100%}
+.hero-l-inner{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center}
+.sec-tag{font-family:var(--mono);font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--white3);margin-bottom:26px;display:flex;align-items:center;gap:12px}
+.sec-tag::before{content:'';width:28px;height:1px;background:var(--accent);opacity:.6}
+.hero-h{font-family:var(--serif);font-size:clamp(52px,5.5vw,84px);font-weight:300;line-height:.95;letter-spacing:-2px;margin-bottom:36px}
+.hero-h em{font-style:italic;color:var(--white2)}
+.hero-desc{font-family:var(--sans);font-size:16px;font-weight:300;color:var(--white2);line-height:1.8;max-width:440px;margin-bottom:52px}
+
+/* Direct contact items */
+.direct-items{display:flex;flex-direction:column;gap:0;position:relative;z-index:1}
+.di{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 0;border-top:1px solid var(--brd2);
+  transition:padding-left .2s;cursor:none;text-decoration:none;color:inherit;
+}
+.di:last-child{border-bottom:1px solid var(--brd2)}
+.di:hover{padding-left:10px}
+.di-left{display:flex;flex-direction:column;gap:4px}
+.di-label{font-family:var(--mono);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--white3)}
+.di-value{font-family:var(--sans);font-size:16px;font-weight:400;color:var(--white)}
+.di-arrow{font-family:var(--mono);font-size:11px;color:var(--accent);opacity:0;transform:translateX(-8px);transition:all .25s}
+.di:hover .di-arrow{opacity:.7;transform:translateX(0)}
+
+/* Right — form */
+.hero-r{
+  padding:200px 64px 80px;
+  background:var(--bg2);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.form-head{margin-bottom:44px}
+.form-title{font-family:var(--serif);font-size:clamp(28px,2.8vw,42px);font-weight:300;line-height:1.15;letter-spacing:-.3px;margin-bottom:10px}
+.form-title em{font-style:italic;color:var(--white2)}
+.form-sub{font-family:var(--sans);font-size:14px;font-weight:300;color:var(--white3);line-height:1.7}
+
+/* Form fields */
+.form{display:flex;flex-direction:column;gap:0}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--brd);margin-bottom:1px}
+.f-row.full{grid-template-columns:1fr}
+.f-field{
+  background:var(--bg);
+  display:flex;flex-direction:column;
+  transition:background .2s;
+  position:relative;
+}
+.f-field:focus-within{background:var(--bg2)}
+.f-field::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:var(--accent);transform:scaleX(0);transform-origin:left;
+  transition:transform .35s ease;opacity:.6;
+}
+.f-field:focus-within::after{transform:scaleX(1)}
+.f-label{
+  font-family:var(--mono);font-size:8.5px;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--white3);
+  padding:16px 20px 4px;
+}
+.f-input{
+  font-family:var(--sans);font-size:14px;font-weight:300;
+  color:var(--white);background:transparent;border:none;
+  outline:none;padding:0 20px 16px;
+  width:100%;resize:none;
+}
+.f-input::placeholder{color:rgba(240,238,235,.2)}
+select.f-input{
+  appearance:none;-webkit-appearance:none;
+  cursor:none;
+}
+select.f-input option{background:var(--bg3);color:var(--white)}
+
+.f-textarea{
+  font-family:var(--sans);font-size:14px;font-weight:300;
+  color:var(--white);background:transparent;border:none;
+  outline:none;padding:12px 20px 16px;
+  width:100%;resize:none;min-height:120px;line-height:1.6;
+}
+.f-textarea::placeholder{color:rgba(240,238,235,.2)}
+
+/* Consent + submit */
+.f-consent{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:24px 0;
+  font-family:var(--sans);font-size:12px;font-weight:300;
+  color:var(--white3);line-height:1.6;
+}
+.f-checkbox{
+  width:16px;height:16px;flex-shrink:0;margin-top:1px;
+  border:1px solid var(--brd);
+  background:transparent;cursor:none;
+  appearance:none;-webkit-appearance:none;
+  transition:border-color .2s;position:relative;
+}
+.f-checkbox:checked{border-color:var(--accent);background:var(--accent-dim)}
+.f-checkbox:checked::after{
+  content:'';position:absolute;top:2px;left:4px;
+  width:5px;height:8px;
+  border-right:1px solid var(--accent);
+  border-bottom:1px solid var(--accent);
+  transform:rotate(40deg);
+}
+.f-submit{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:4px;
+}
+.submit-btn{
+  font-family:var(--mono);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;
+  font-weight:400;color:var(--bg);background:var(--white);
+  border:none;border-radius:1px;padding:16px 36px;
+  cursor:none;transition:all .3s;
+}
+.submit-btn:hover{background:var(--white2);transform:translateY(-1px)}
+.submit-btn:disabled{opacity:.4;transform:none;cursor:not-allowed}
+.f-note{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;color:var(--white3);max-width:200px;text-align:right;line-height:1.6}
+
+/* Success state */
+.f-success{
+  display:none;
+  padding:48px 0;text-align:center;
+  flex-direction:column;align-items:center;gap:16px;
+}
+.f-success.show{display:flex}
+.success-icon{
+  width:52px;height:52px;border-radius:50%;
+  border:1px solid var(--accent);
+  display:flex;align-items:center;justify-content:center;margin-bottom:8px;
+}
+.success-icon svg{width:20px;height:20px}
+.success-t{font-family:var(--serif);font-size:28px;font-weight:300}
+.success-d{font-family:var(--sans);font-size:14px;font-weight:300;color:var(--white3);line-height:1.7;max-width:340px}
+
+/* ═══ INFO STRIP ═══ */
+.info-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-bottom:1px solid var(--brd);
+  background:var(--bg2);
+}
+.is{
+  padding:48px 44px;border-right:1px solid var(--brd);
+  transition:background .3s;position:relative;overflow:hidden;
+}
+.is:last-child{border-right:none}
+.is:hover{background:var(--bg3)}
+.is::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .4s;opacity:.45}
+.is:hover::after{transform:scaleX(1)}
+.is-label{font-family:var(--mono);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--white3);margin-bottom:16px}
+.is-value{font-family:var(--sans);font-size:15px;font-weight:400;color:var(--white);line-height:1.6}
+.is-value a{color:var(--white);text-decoration:none;transition:color .2s}
+.is-value a:hover{color:var(--white2)}
+.is-sub{font-family:var(--sans);font-size:12px;font-weight:300;color:var(--white3);margin-top:6px;line-height:1.6}
+
+/* ═══ MAP / OFFICE ═══ */
+.office{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--brd);
+  min-height:480px;
+}
+.office-map{
+  background:var(--bg3);
+  position:relative;overflow:hidden;
+  border-right:1px solid var(--brd);
+}
+/* Stylised geometric map placeholder */
+.office-map svg{width:100%;height:100%}
+.office-info{
+  padding:72px 60px;
+  display:flex;flex-direction:column;gap:0;justify-content:center;
+}
+.oi-tag{font-family:var(--mono);font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--white3);margin-bottom:28px;display:flex;align-items:center;gap:12px}
+.oi-tag::before{content:'';width:28px;height:1px;background:var(--accent);opacity:.6}
+.oi-h{font-family:var(--serif);font-size:clamp(30px,3vw,46px);font-weight:300;line-height:1.1;letter-spacing:-.3px;margin-bottom:36px}
+.oi-h em{font-style:italic;color:var(--white2)}
+.oi-rows{display:flex;flex-direction:column;gap:0}
+.oi-row{
+  display:flex;gap:20px;
+  padding:20px 0;border-bottom:1px solid var(--brd2);
+}
+.oi-row:first-child{border-top:1px solid var(--brd2)}
+.oi-rl{font-family:var(--mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--white3);min-width:80px;padding-top:2px}
+.oi-rv{font-family:var(--sans);font-size:14px;font-weight:300;color:var(--white2);line-height:1.65}
+.oi-rv a{color:var(--white2);text-decoration:none;transition:color .2s}
+.oi-rv a:hover{color:var(--white)}
+.oi-directions{
+  margin-top:32px;
+  font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--white3);text-decoration:none;
+  display:flex;align-items:center;gap:10px;
+  transition:color .2s;
+}
+.oi-directions:hover{color:var(--white)}
+.oi-directions::before{content:'';width:24px;height:1px;background:currentColor;transition:width .3s}
+.oi-directions:hover::before{width:40px}
+
+/* ═══ FAQ ═══ */
+.faq{
+  padding:100px 60px;
+  display:grid;grid-template-columns:1fr 1.6fr;
+  gap:100px;align-items:start;
+  border-bottom:1px solid var(--brd);
+  background:var(--bg2);
+}
+.faq-l{}
+.faq-l .sec-tag{margin-bottom:20px}
+.faq-lh{font-family:var(--serif);font-size:clamp(30px,3vw,46px);font-weight:300;line-height:1.12;letter-spacing:-.3px;margin-bottom:24px}
+.faq-lh em{font-style:italic;color:var(--white2)}
+.faq-lb{font-family:var(--sans);font-size:14px;font-weight:300;color:var(--white3);line-height:1.75}
+.faq-list{}
+.faq-item{border-bottom:1px solid var(--brd2)}
+.faq-item:first-child{border-top:1px solid var(--brd2)}
+.faq-q{
+  width:100%;background:none;border:none;
+  color:var(--white);text-align:left;
+  padding:22px 0;cursor:none;
+  font-size:15px;font-family:var(--sans);font-weight:400;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  transition:padding-left .2s;
+}
+.faq-q:hover{padding-left:6px}
+.faq-plus{
+  font-family:var(--mono);font-size:18px;color:var(--white3);
+  font-weight:300;line-height:1;flex-shrink:0;
+  transition:transform .3s;
+}
+.faq-item.open .faq-plus{transform:rotate(45deg)}
+.faq-a{
+  color:var(--white3);font-family:var(--sans);font-size:14px;
+  font-weight:300;line-height:1.75;
+  max-height:0;overflow:hidden;
+  transition:max-height .38s ease,padding-bottom .3s;
+}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:22px}
+
+/* ═══ FOOTER ═══ */
+footer{border-top:1px solid var(--brd);padding:64px 60px 48px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:64px}
+.f-lt{font-family:var(--mono);font-size:11px;letter-spacing:3.5px;color:var(--white)}
+.f-logorow{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.f-copy{font-family:var(--sans);font-size:13px;font-weight:300;color:var(--white3);line-height:1.75;margin-bottom:18px}
+.f-reg{font-family:var(--mono);font-size:9px;letter-spacing:1.2px;color:rgba(240,238,235,.25);line-height:1.9}
+.f-ch{font-family:var(--mono);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--white3);margin-bottom:20px}
+.f-links{display:flex;flex-direction:column;gap:12px}
+.f-links a{font-family:var(--sans);font-size:13.5px;font-weight:300;color:rgba(240,238,235,.45);text-decoration:none;transition:color .2s}
+.f-links a:hover{color:var(--white)}
+.f-ci{font-family:var(--sans);font-size:13px;font-weight:300;color:rgba(240,238,235,.45);line-height:1.7}
+.f-ci strong{display:block;font-weight:400;font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--white3);margin-bottom:4px}
+.f-bot{border-top:1px solid var(--brd2);padding:22px 60px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.f-disc{font-family:var(--mono);font-size:9.5px;letter-spacing:.8px;color:rgba(240,238,235,.18);line-height:1.85;max-width:720px}
+.f-url{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:rgba(240,238,235,.18);white-space:nowrap}
+
+/* ═══ ANIMATIONS ═══ */
+@keyframes rot{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes rotr{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+.rot{animation:rot 90s linear infinite}
+.rotr{animation:rotr 65s linear infinite}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr}
+  .hero-l{padding:180px 28px 60px;border-right:none;border-bottom:1px solid var(--brd)}
+  .hero-r{padding:60px 28px 80px}
+  .info-strip{grid-template-columns:repeat(2,1fr)}
+  .info-strip .is:nth-child(2){border-right:none}
+  .office{grid-template-columns:1fr}
+  .office-map{height:340px;border-right:none;border-bottom:1px solid var(--brd)}
+  .office-info{padding:56px 28px}
+  .faq{grid-template-columns:1fr;gap:48px;padding:72px 28px}
+  footer{grid-template-columns:1fr 1fr;gap:40px;padding:48px 28px 40px}
+  .f-bot{padding:20px 28px}
+}
+@media(max-width:640px){
+  
+  .hero-l{padding:160px 20px 52px}
+  .hero-r{padding:48px 20px 72px}
+  .info-strip{grid-template-columns:1fr 1fr}
+  .is{padding:28px 20px;border-right:none;border-bottom:1px solid var(--brd)}
+  .info-strip .is:nth-child(odd){border-right:1px solid var(--brd)}
+  .office-info{padding:44px 20px}
+  .faq{padding:60px 20px}
+  footer{grid-template-columns:1fr;padding:36px 20px}
+  .f-bot{padding:18px 20px}
+  .f-row{grid-template-columns:1fr}
+  .f-submit{flex-direction:column;align-items:flex-start;gap:14px}
+  .f-note{text-align:left}
+}
+</style>
+
+<script is:inline>
+/* Cursor */
+
+
+document.querySelectorAll('a,button,.di,.is,.faq-q,.f-field,input,select,textarea').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(2)';curR.style.width='56px';curR.style.height='56px'});
+  el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)';curR.style.width='32px';curR.style.height='32px'});
+});
+
+/* Nav scroll */
+
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* FAQ toggle */
+function toggle(btn){
+  const item=btn.parentElement;
+  document.querySelectorAll('.faq-item.open').forEach(i=>{if(i!==item)i.classList.remove('open')});
+  item.classList.toggle('open');
+}
+
+/* Form submit */
+document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  if (!btn || !form || !success) return;
+
+  // Basic validation
+  const required = form.querySelectorAll('[required]');
+  let valid = true;
+  required.forEach(field => {
+    if (!field.value.trim()) {
+      field.style.borderColor = 'rgba(205,78,78,.6)';
+      valid = false;
+    } else {
+      field.style.borderColor = '';
+    }
+  });
+  if (!valid) return;
+
+  btn.textContent = 'Sending...';
+  btn.style.opacity = '0.7';
+  btn.disabled = true;
+
+  try {
+    // Formspree endpoint — replace YOUR_FORM_ID with actual Formspree form ID
+    // or use mailto fallback below
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    // Try Formspree if configured
+    const FORMSPREE_ID = ''; // set to your Formspree form ID e.g. 'xpwzgkrb'
+    if (FORMSPREE_ID) {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (!res.ok) throw new Error('Form submission failed');
+    }
+
+    // Show success
+    form.style.display = 'none';
+    success.hidden = false;
+  } catch (err) {
+    // Fallback: open mailto
+    const name = form.querySelector('#firstName')?.value + ' ' + form.querySelector('#lastName')?.value;
+    const email = form.querySelector('#email')?.value;
+    const msg = form.querySelector('#message')?.value;
+    window.location.href = `mailto:invest@radianx.io?subject=Consultation%20Request%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent('From: ' + name + ' <' + email + '>
+
+' + msg)}`;
+  } finally {
+    btn.textContent = 'Send Message';
+    btn.style.opacity = '';
+    btn.disabled = false;
+  }
+});
+
+// Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
